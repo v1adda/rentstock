@@ -1,0 +1,50 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+
+{% block content %}
+    <h1 style="font-size: 80px;">RENT STOCK</h1>
+    <p style="font-size: 26px;">Сервис для <font color="#571818"> <b>аренды</b></font> вещей</p>
+
+
+    <div align="center">
+        <div style="float:left">
+            <a><img src="{% static "deps/images/img1.png" %}" width="520" height="350"></a>
+        </div>
+        <div style="float:center">
+        <a><img src={% static "deps/images/img2.png" %} width="350" height="350"></a>
+            <div style="float:right">
+        <a><img src={% static "deps/images/img9.png" %} width="350" height="350"></a>
+        </div>
+    </div><br><br><br><br>
+
+        <p style="font-size: 34px;"><b>Все объявления</b></p><br>
+
+        <table style="width: 100%; text-align: center;">
+        <tr>
+            <td><img src="{% static "deps/images/img3.png" %}" alt="Картинка 1" width="320">
+                <p style="font-size: 23px;"><b>Проектор</b><br><font color="#571818">700р./сутки</font></p></td>
+            <td><img src="{% static "deps/images/img4.png" %}" alt="Картинка 2" width="320">
+                <p style="font-size: 23px;"><b>Перфоратор</b><br><font color="#571818">800р./сутки</font></p></td></td>
+            <td><img src="{% static "deps/images/img5.png" %}" alt="Картинка 3" width="320">
+                <p style="font-size: 23px;"><b>Велотренажер</b><br><font color="#571818">750р./сутки</font></p></td></td>
+        </tr>
+        </table><br><br>
+
+        <table style="width: 100%; text-align: center;">
+        <tr>
+            <td><img src="{% static "deps/images/img6.png" %}" alt="Картинка 4" width="320">
+                <p style="font-size: 23px;"><b>Палатка</b><br><font color="#571818">600р./сутки</font></p></td>
+            <td><img src="{% static "deps/images/img7.png" %}" alt="Картинка 5" width="320">
+                <p style="font-size: 23px;"><b>VR-шлем</b><br><font color="#571818">1400р./сутки</font></p></td></td>
+            <td><img src="{% static "deps/images/img8.png" %}" alt="Картинка 6" width="320">
+                <p style="font-size: 23px;"><b>Ролики</b><br><font color="#571818">450р./сутки</font></p></td></td>
+        </tr>
+        </table><br><br>
+
+
+{% endblock %}
